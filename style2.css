@@ -1,0 +1,249 @@
+What you need to do is make just a ID for the map div that says its going to be 100% of the div and then classes 
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/******** Classes       **********/
+
+.main-nav{ 
+  display: block;
+  text-align: center;
+  margin: 0;
+  background-color: red; opacity: 0.6;
+}
+
+/******** All the ID's       **********/
+
+#wlr-parent {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#app-container {
+  /*width: 50%;*/
+  /*height: 100%;*/
+  background-color: #00000;
+  flex-direction: column;
+  flex: 1 1 auto;
+  }
+
+  #map-canvas {
+    height: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+  #elevation-chart {
+    /*height: 100%;*/
+    flex: 1 1 auto;
+  }
+  #ride-description {
+    /*width: 50%;*/
+    background-color: #ff9e2c;
+    flex: 1 1 auto;
+  }
+
+
+/******** Media Queries      **********/
+
+
+
+/* Large screens */
+@media (min-width: 768px) {
+ #wlr-parent {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#app-container {
+  /*width: 50%;*/
+  /*height: 100%;*/
+  background-color: #00000;
+  flex-direction: column;
+  flex: 1 1 auto;
+  }
+
+  #map-canvas {
+    height: 100%;
+    /*width: 100%;*/
+    flex: 1 1 auto;
+  }
+  #elevation-chart {
+    /*height: 100%;*/
+    flex: 1 1 auto;
+  }
+  #ride-description {
+    /*width: 50%;*/
+    background-color: #ff9e2c;
+    flex: 1 1 auto;
+  }
+}
+
+
+
+
+
+
+/******** Setting up some flex grid magic       **********/
+
+/*.Grid {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+
+/*.Grid-cell {*/
+/*  flex: 1;*/
+/*}*/
+
+/* With gutters */
+/*.Grid--gutters {*/
+/*  margin: -1em 0 0 -1em;*/
+/*}*/
+/*.Grid--gutters > .Grid-cell {*/
+/*  padding: 1em 0 0 1em;*/
+/*}*/
+
+/* Alignment per row */
+/*.Grid--top {*/
+/*  align-items: flex-start;*/
+/*}*/
+/*.Grid--bottom {*/
+/*  align-items: flex-end;*/
+/*}*/
+/*.Grid--center {*/
+/*  align-items: center;*/
+/*}*/
+
+/* Alignment per cell */
+/*.Grid-cell--top {*/
+/*  align-self: flex-start;*/
+/*}*/
+/*.Grid-cell--bottom {*/
+/*  align-self: flex-end;*/
+/*}*/
+/*.Grid-cell--center {*/
+/*  align-self: center;*/
+/*}*/
+
+/* Small to medium screens */
+/*@media (min-width: 24em) {*/
+/*  .small-Grid--fit > .Grid-cell {*/
+/*    flex: 1;*/
+/*  }*/
+/*  .small-Grid--full > .Grid-cell {*/
+/*    flex: 0 0 100%;*/
+/*  }*/
+/*  .small-Grid--1of2 > .Grid-cell {*/
+/*    flex: 0 0 50%*/
+/*  }*/
+/*  .small-Grid--1of3 > .Grid-cell {*/
+/*    flex: 0 0 33.3333%*/
+/*  }*/
+/*  .small-Grid--1of4 > .Grid-cell {*/
+/*    flex: 0 0 25%*/
+/*  }*/
+/*}*/
+
+/* Large screens */
+/*@media (min-width: 48em) {*/
+/*  .large-Grid--fit > .Grid-cell {*/
+/*    flex: 1;*/
+/*  }*/
+/*  .large-Grid--full > .Grid-cell {*/
+/*    flex: 0 0 100%;*/
+/*  }*/
+/*  .large-Grid--1of2 > .Grid-cell {*/
+/*    flex: 0 0 50%*/
+/*  }*/
+/*  .large-Grid--1of3 > .Grid-cell {*/
+/*    flex: 0 0 33.3333%*/
+/*  }*/
+/*  .large-Grid--1of4 > .Grid-cell {*/
+/*    flex: 0 0 25%*/
+/*  }*/
+/*}*/
+
+/******************* Some media queries that I think would work if I wasn't trying to use flexbox*/
+
+/* Small, Phones */ 
+/*@media only screen and (min-width : 480px) {*/
+/*  #both_graphics {*/
+/*    order: 1;*/
+/*    display: flex;*/
+/*  }*/
+/*  #map_canvas {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    order: 1;*/
+/*    margin-top: 20px;*/
+/*  }*/
+/*  #elevation_chart {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    order: 2;*/
+/*    margin-top: 20px;*/
+/*  }*/
+/*  #ride_description {*/
+/*    order: 2;*/
+/*    width: 48%;*/
+/*    margin-top: 20px;    */
+/*  }*/
+/*}*/
+  
+/* Medium, Tablets */
+/*@media only screen and (min-width : 768px) {*/
+  
+/*  #map-canvas {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    margin-top: 20px;    */
+/*  }*/
+/*  #elevation_chart {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    margin-top: 20px;    */
+/*  }*/
+    
+/*}*/
+  
+/* Large, Desktops */
+/*@media only screen and (min-width : 992px) {*/
+  
+/*  #map-canvas {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    margin-top: 20px;*/
+/*  }*/
+
+/*  #elevation_chart {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    margin-top: 20px;    */
+/*  }*/
+/*}*/

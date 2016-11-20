@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>Where Locals Ride</title>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style2.css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+
+<body>
+  <!--These are supposed to be links-->
+  <div class="main-nav">
+    <h1>
+      Where Locals Ride
+    </h1>
+    <h2>
+      Calgary
+    </h2>
+    <h2>
+      Kelowna
+    </h2>
+  </div>
+  
+  <div id="wlr-parent" class="">
+  
+  <!--This is the container for the maps-->
+  <div id="app-container" class="">
+    
+    <!----div for -->
+    <div id="map-canvas" class=""></div>
+    <div id="elevation-chart" class=""></div>
+      
+      <!--Javascript for the google maps -->
+      <script type="text/javascript" src="script.js"></script>
+      <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqF_ATEvClzSIV0vJALJE2n7d-dwOdOTw&callback=initMap"></script>
+    
+    <!--Ends the app container-->
+    </div>
+    <div id="ride-description" class="">THE ROAD TO NEPAL and some other text on the right of the page</div>
+
+<!--Ends the parent div and seals up the page-->
+  </div>   
+</body>
+
+
+</html>
