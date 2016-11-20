@@ -4,13 +4,12 @@ html, body {
     padding: 0;
     /* to avoid scrollbars */
 }
-#wrapper {
+.wrapper {
     display: flex;
     /* use the flex model */
     /*min-height: 100%;*/
     flex-direction: column;
     /*border: 5px red dashed;*/
-  
 }
 
 
@@ -30,6 +29,8 @@ html, body {
     height: 100%;
     /*border: 2px dotted;*/
 }
+
+
 
 #map-canvas {
     /*display: inline-block;*/
@@ -75,7 +76,7 @@ html, body {
     /* can be variable as well */
 }
 
-#app-container {
+.app-container {
     display: flex;
     flex: 1 1 auto;
     /*border: 2px dotted red;*/
